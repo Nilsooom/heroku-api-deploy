@@ -6,6 +6,9 @@ const verificaLogin = require('./filtros/verificaLogin');
 
 const rotas = express();
 
+//rota teste
+rotas.get('/', (req, res)=>{ return res.json({mensagem: "Api ok"}) }
+
 // cadastro de usuario
 rotas.post('https://api-reunilson-dev-jr.herokuapp.com/usuarios', usuarios.cadastrarUsuario);
 
