@@ -7,7 +7,7 @@ const verificaLogin = require('./filtros/verificaLogin');
 const rotas = express();
 
 // cadastro de usuario
-rotas.post('/usuarios', usuarios.cadastrarUsuario);
+rotas.post('https://git.heroku.com/api-reunilson-dev-jr.git/usuarios', usuarios.cadastrarUsuario);
 
 // login
 rotas.post('/login', login.login);
