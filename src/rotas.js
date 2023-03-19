@@ -6,11 +6,9 @@ const verificaLogin = require('./filtros/verificaLogin');
 
 const rotas = express();
 
-//rota teste
-rotas.get('https://git.heroku.com/api-reunilson-dev-jr.git', (req, res)=>{ return res.json({mensagem: "Api ok"}) }
 
 // cadastro de usuario
-rotas.post('https://api-reunilson-dev-jr.herokuapp.com/usuarios', usuarios.cadastrarUsuario);
+rotas.post('/usuarios', usuarios.cadastrarUsuario);
 
 // login
 rotas.post('/login', login.login);
