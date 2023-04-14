@@ -6,6 +6,10 @@ const verificaLogin = require('./filtros/verificaLogin');
 
 const rotas = express();
 
+rotas.get('/', (req, res)=>{
+    return res.json("Api ok!")
+})
+
 
 // cadastro de usuario
 rotas.post('/usuarios', usuarios.cadastrarUsuario);
