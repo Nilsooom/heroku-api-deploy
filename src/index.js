@@ -11,5 +11,5 @@ app.use(cors());
 app.use(rotas);
 
 app.listen(process.env.PORT, () => {
-    console.log('Servidor Conectado a Porta 8000')
+    console.log('Servidor Conectado')
 });
